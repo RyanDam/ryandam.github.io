@@ -28,5 +28,6 @@
 }
 
 .body-property {
-/* background-image: url("back.jpg"); */
+    /* background-image: url("back.jpg"); */
+    /* background-repeat: repeat-y; */
 }
