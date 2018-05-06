@@ -1,17 +1,43 @@
+@font-face {
+  font-family: monaco;
+  src: url('{{ "/assets/monaco.ttf" | relative_url }}');
+}
+
 /**
  * Syntax highlighting styles
  */
 .highlight {
   background: rgb(255, 246, 225);
-  padding: 18px 32px;
+  padding: 18px 18px;
   border-radius: 8px;
-  /* @extend %vertical-rhythm; */
 }
+
+.highlight > pre {
+  margin: 0px;
+}
+
+.code > pre > span {
+  font-family: monaco, 'Courier New', Courier, monospace;
+}
+
+/* .code > pre {
+  margin: 0px;
+} */
 
 .highlighter-rouge {
   background: rgb(255, 246, 225);
   padding: 2px 8px;
   border-radius: 4px;
+}
+
+.lineno {
+  margin-right: 18px;
+  padding: 0px 4px;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+  border-radius: 4px;
+  font-family: monaco, 'Courier New', Courier, monospace;
 }
 
 .c     { color: #998; font-style: italic }
