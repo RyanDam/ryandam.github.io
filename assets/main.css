@@ -1,3 +1,8 @@
+.head-text {
+    font-family: 'Astronout';
+    font-size: 7em;
+}
+
 blockquote {
     /* border-left-style: solid;
     border-left-color: rgba(0, 0, 0, 0.1);
@@ -31,9 +36,10 @@ blockquote > p > cite {
 
 .article-thumb {
     width: 100%;
-    height: 250px;
-    border-radius: 16px;
+    height: auto;
     background-size: cover;
+    /* margin: 4px; */
+    border-radius: 4px;
 }
 
 .media-thumb {
@@ -49,11 +55,15 @@ blockquote > p > cite {
 }
 
 .article-container > div {
-    margin: 32px 0px;;
+    margin: 0px 0px;;
+}
+
+.article-wrapper {
+    margin: 10px 0px 4px 0px;
 }
 
 .body-thumb {
-    margin: 8px 0px;
+    margin: 0px 0px;
 }
 
 .body-property {
@@ -72,8 +82,11 @@ blockquote > p > cite {
     position: absolute;
     height: 40px;
     height: 40px;
-    margin: 48px;
     z-index: 10;
+    background-color: #007bff;
+    color: white;
+    top: 0;
+    left: 0px;
 }
 
 .post-time {
@@ -81,7 +94,7 @@ blockquote > p > cite {
     text-transform: uppercase;
     color: rgb(172, 172, 172);
     font-weight: 700;
-    margin: 0px 16px;
+    margin: 0px 8px 2px 8px;
 }
 
 .post-cate {
@@ -89,34 +102,41 @@ blockquote > p > cite {
 }
 
 .post-title {
-    color: rgb(37, 41, 58);
-    /* font-family: 'Montserrat', sans-serif; */
-    font-size: 2em;
+    color: pink;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    /* font-size: 1.6em; */
+    font-size: 0.8em;
     font-weight: 700;
-    margin: 8px 16px;
+    /* margin: 8px 0px; */
+    /* opacity: 0.5; */
+    text-transform: uppercase;
 }
 
 .post-title-sm {
     color: rgb(37, 41, 58);
-    /* font-family: 'Montserrat', sans-serif; */
-    font-size: 1.5em;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    /* font-size: 2.0em; */
+    font-size: 0.8em;
     font-weight: 700;
-    margin: 8px 16px;
+    opacity: 0.8;
+    /* margin: 8px 0px; */
 }
 
 .post-title-xs {
     color: rgb(37, 41, 58);
-    /* font-family: 'Montserrat', sans-serif; */
-    font-size: 1em;
+    /* font-family: 'Yanone Kaffeesatz', sans-serif; */
+    /* font-size: 1.4em; */
+    font-size: 0.8em;
     font-weight: 700;
-    margin: 8px 16px;
+    opacity: 0.8;
+    /* margin: 8px 0px; */
 }
 
 .post-content {
     color: rgb(107, 107, 107);
     font-family: 'Playfair Display', Georgia, Times, 'Times New Roman', serif;
     font-size: 1em;
-    margin: 8px 16px;
+    margin: 8px 8px;
 }
 
 .post-content-xs {
@@ -149,16 +169,16 @@ blockquote > p > cite {
     border-style: solid;
     border-width: 0.5px;
     border-color: rgb(243, 243, 243);
-    border-radius: 8px;
+    border-radius: 4px;
     margin: 8px 0px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px rgb(240, 240, 240)
 }
 
 .page-whatnext-thumbnail {
     width: 100%;
     height: 128px;
     background-size: cover;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .page-tag-container {
